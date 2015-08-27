@@ -1,0 +1,251 @@
+
+/* line 8, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline {
+  margin: 30px 0 0 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  /* The line */
+}
+/* line 14, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: #afdcf8;
+  left: 20%;
+  margin-left: -10px;
+}
+/* line 24, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li {
+  position: relative;
+  /* Right content */
+  /* The icons */
+  /* custom by idss */
+}
+/* line 26, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .cbp_tmtime {
+  display: block;
+  width: 25%;
+  padding-right: 100px;
+  position: absolute;
+}
+/* line 31, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .cbp_tmtime span {
+  display: block;
+  text-align: right;
+}
+/* line 34, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .cbp_tmtime span:first-child {
+  font-size: 0.9em;
+  color: #bdd0db;
+}
+/* line 41, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .cbp_tmlabel {
+  margin: 0 0 15px 25%;
+  background: #6cbfee;
+  color: #fff;
+  padding: 2em;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.4;
+  position: relative;
+  border-radius: 5px;
+  /* The triangle */
+}
+/* line 51, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .cbp_tmlabel span {
+  display: block;
+  text-align: right;
+}
+/* line 54, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .cbp_tmlabel span:last-child {
+  font-size: 2em;
+  color: #3594cb;
+}
+/* line 59, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .cbp_tmlabel:nth-child(odd) {
+  background: #6cbfee;
+}
+/* line 61, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .cbp_tmlabel:nth-child(odd) span:last-child {
+  color: #6cbfee;
+}
+/* line 65, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .cbp_tmlabel h2 {
+  margin-top: 0px;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+/* line 70, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .cbp_tmlabel:nth-child(odd) {
+  background: #3594cb;
+}
+/* line 74, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-right-color: #6cbfee;
+  border-width: 10px;
+  top: 10px;
+}
+/* line 85, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .cbp_tmlabel:nth-child(odd):after {
+  border-right-color: #3594cb;
+}
+/* line 88, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .cbp_tmlabel:last-child {
+  margin-bottom: 80px;
+}
+/* line 93, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .cbp_tmicon {
+  width: 40px;
+  height: 40px;
+  font-family: 'ecoico';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 1.4em;
+  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  color: #fff;
+  background: #46a4da;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #afdcf8;
+  text-align: center;
+  left: 20%;
+  top: 0;
+  margin: 0 0 0 -25px;
+}
+/* line 116, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .time-spot {
+  left: -6%;
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 0 0 8px #afdcf8;
+  font-family: 'ecoico';
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  color: #fff;
+  background: #46a4da;
+  border-radius: 50%;
+  text-align: center;
+  top: 0;
+  margin: 0 0 0 -25px;
+}
+/* line 132, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .time-text {
+  left: -25%;
+}
+/* line 134, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .time-text:nth-child(odd) {
+  color: #3594cb;
+}
+
+/* custom by idss */
+/* line 144, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .empty-block {
+  width: 100%;
+  height: 80px;
+}
+/* line 147, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+.cbp_tmtimeline > li .empty-block:nth-child(n+2) {
+  margin-top: 80px;
+}
+
+/* Example Media Queries */
+@media screen and (max-width: 1200px) {
+  /* line 156, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+  .cbp_tmtimeline > li .cbp_tmlabel span:last-child {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 163, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+  .cbp_tmtimeline > li .time-text {
+    left: -34%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 170, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+  .cbp_tmtimeline:before {
+    display: none;
+  }
+  /* line 172, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+  .cbp_tmtimeline > li .cbp_tmtime {
+    width: 100%;
+    position: relative;
+    padding: 0 0 20px 0;
+  }
+  /* line 176, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+  .cbp_tmtimeline > li .cbp_tmtime span {
+    text-align: left;
+  }
+  /* line 178, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+  .cbp_tmtimeline > li .cbp_tmtime span:first-child {
+    position: absolute;
+    right: 60px;
+    bottom: 20px;
+  }
+  /* line 185, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+  .cbp_tmtimeline > li .cbp_tmlabel {
+    margin: 0 0 60px 0;
+    padding: 1em;
+    font-weight: 400;
+    font-size: 95%;
+    /* triangle */
+  }
+  /* line 191, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+  .cbp_tmtimeline > li .cbp_tmlabel:after {
+    right: auto;
+    left: 26px;
+    border-right-color: transparent;
+    border-bottom-color: #6cbfee;
+    top: -18px;
+  }
+  /* line 198, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+  .cbp_tmtimeline > li .cbp_tmlabel:nth-child(odd):after {
+    border-right-color: transparent;
+    border-bottom-color: #3594cb;
+  }
+  /* line 203, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+  .cbp_tmtimeline > li .cbp_tmicon {
+    position: relative;
+    float: right;
+    left: auto;
+    margin: -120px 5px 0 0px;
+  }
+  /* line 209, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+  .cbp_tmtimeline > li .time-spot {
+    left: 0;
+    top: -40px;
+    width: 26px;
+    height: 26px;
+    box-shadow: 0 0 0 8px #afdcf8;
+    float: left;
+    margin: 0;
+  }
+  /* line 218, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+  .cbp_tmtimeline > li > time {
+    margin-bottom: 60px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+  }
+  /* line 222, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+  .cbp_tmtimeline > li .time-text {
+    left: 20px;
+    top: -60px;
+  }
+  /* line 226, /Users/meizhiguan/devproj/idss.com/app/assets/stylesheets/timeline.css.scss */
+  .cbp_tmtimeline > li .empty-block {
+    display: none;
+  }

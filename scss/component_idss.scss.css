@@ -1,0 +1,232 @@
+$light_blue: #afdcf8;
+$medium_blue: #6cbfee;
+$dark_blue: #3594cb;
+$white_line: rgba(255,255,255,0.4);
+$grey_line: rgba(100, 100, 100, 0.2);
+$date_margin: 60px;
+
+.cbp_tmtimeline {
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    /* The line */
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        background: $light_blue;
+        left: 20%;
+        margin-left: -10px;
+    }
+    > li {
+        position: relative;
+        .cbp_tmtime {
+            display: block;
+            width: 25%;
+            padding-right: 100px;
+            position: absolute;
+            span {
+                display: block;
+                text-align: right;
+                &:first-child {
+                    font-size: 0.9em;
+                    color: #bdd0db;
+                }
+            }
+        }
+        /* Right content */
+        .cbp_tmlabel {
+            margin: 0 0 15px 25%;
+            background: $medium_blue;
+            color: #fff;
+            padding: 2em;
+            font-size: 1.2em;
+            font-weight: 300;
+            line-height: 1.4;
+            position: relative;
+            border-radius: 5px;
+            span {
+                display: block;
+                text-align: right;
+                &:last-child {
+                    font-size: 2em;
+                    color: $dark_blue;
+                }
+            }
+            &:nth-child(odd) {
+                background: $medium_blue;
+                span:last-child {
+                    color: $medium_blue;
+                }
+            }
+            h2 {
+                margin-top: 0px;
+                padding: 0 0 10px 0;
+                border-bottom: 1px solid $white_line;
+            }
+            &:nth-child(odd) {
+                background: $dark_blue;
+            }
+            /* The triangle */
+            &:after {
+                right: 100%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                border-right-color: $medium_blue;
+                border-width: 10px;
+                top: 10px;
+            }
+            &:nth-child(odd):after {
+                border-right-color: $dark_blue;
+            }
+            &:last-child {
+                margin-bottom: 80px;
+            }
+        }
+        /* The icons */
+        .cbp_tmicon {
+            width: 40px;
+            height: 40px;
+            font-family: 'ecoico';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            font-size: 1.4em;
+            line-height: 40px;
+            -webkit-font-smoothing: antialiased;
+            position: absolute;
+            color: #fff;
+            background: #46a4da;
+            border-radius: 50%;
+            box-shadow: 0 0 0 8px $light_blue;
+            text-align: center;
+            left: 20%;
+            top: 0;
+            margin: 0 0 0 -25px;
+        }
+        /* custom by idss */
+        .time-spot {
+            left: -6%;
+            width: 30px;
+            height: 30px;
+            box-shadow: 0 0 0 8px $light_blue;
+            font-family: 'ecoico';
+            speak: none;
+            -webkit-font-smoothing: antialiased;
+            position: absolute;
+            color: #fff;
+            background: #46a4da;
+            border-radius: 50%;
+            text-align: center;
+            top: 0;
+            margin: 0 0 0 -25px;
+        }
+        .time-text {
+            left: -25%;
+            &:nth-child(odd) {
+                color: $dark_blue;
+            }
+        }
+    }
+}
+
+
+/* custom by idss */
+.cbp_tmtimeline > li {
+    .empty-block {
+        width: 100%;
+        height: 80px;
+        &:nth-child(n+2) {
+            margin-top: 80px;
+        }
+    }
+}
+
+/* Example Media Queries */
+@media screen and (max-width: 1200px) {
+    .cbp_tmtimeline > li {
+        .cbp_tmlabel span:last-child {
+            font-size: 1.5em;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .cbp_tmtimeline > li {
+        .time-text {
+            left: -34%;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .cbp_tmtimeline {
+        &:before {display: none;}
+        > li {
+            .cbp_tmtime {
+                width: 100%;
+                position: relative;
+                padding: 0 0 20px 0;
+                span {
+                    text-align: left;
+                    &:first-child {
+                        position: absolute;
+                        right: 60px;
+                        bottom: 20px;
+                    }
+                }
+            }
+            .cbp_tmlabel {
+                margin: 0 0 60px 0;
+                padding: 1em;
+                font-weight: 400;
+                font-size: 95%;
+                /* triangle */
+                &:after {
+                    right: auto;
+                    left: 26px;
+                    border-right-color: transparent;
+                    border-bottom-color: $medium_blue;
+                    top: -18px;
+                }
+                &:nth-child(odd):after {
+                    border-right-color: transparent;
+                    border-bottom-color: $dark_blue;
+                }
+            }
+            .cbp_tmicon {
+                position: relative;
+                float: right;
+                left: auto;
+                margin: -60px-$date_margin 5px 0 0px;
+            }
+            .time-spot {
+                left: 0;
+                top: -40px;
+                width: 26px;
+                height: 26px;
+                box-shadow: 0 0 0 8px $light_blue;
+                float: left;
+                margin: 0;
+            }
+            > time {
+                margin-bottom: $date_margin;
+                border-bottom: 1px solid $grey_line;
+            }
+            .time-text {
+                left: 20px;
+                top: -60px;
+            }
+            .empty-block {
+                display: none;
+            }
+        }
+
+    }
+}
